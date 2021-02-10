@@ -1,0 +1,240 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*
+{
+ padding:0;
+ margin:0;
+}
+body
+{
+ background-image:url(back.jpg);
+ background-size: cover;
+ background-position: center;
+ box sizing: border-box;
+ font family: sans-serif;
+ }
+ .topnav{
+  overflow:hidden;
+  background-color:2F4F4F;
+  }
+  
+  .topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+  .topnav a:hoverl{
+  background-color: #ddd;
+  color:#9E4244;
+  }
+  
+  .topnav a.active{
+  background-color: #F25278;;
+  color:white;
+  }
+  
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+ 
+ .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.active {
+  background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+</style>
+<title>MEET OUR CHEF</title>
+</head>
+<body>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="restaurant.jpg" width="2000" height="400">
+</div>
+
+<div class="mySlides fade">
+<img src="ramsay.jpg" width="2000" height="400">
+</div>
+
+<div class="mySlides fade">
+<img src="food.jpg" width="2000" height="400">
+</div>
+
+
+ <br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<div class="topnav">
+ <a class="active"
+ href="index.html">HOME</a>
+ <a href="quiz.html">QUIZZES</a>
+ <a href="survey.html">SURVEY</a>
+ <a href="video.html">VIDEOS</a>
+</div><br><br><br><br><br><br><br><br>
+
+
+  <div>
+   <center>
+ <img src="gordon.jpg" style="width:20%" alt=""/>
+ <img src="jamie.jpg" style="width:20%" alt=""/>
+  </center>
+  </div>
+  <br>
+ 
+ 
+ <center>
+<table border=0 cellspacing="2" cellpadding="9">
+ <tr> 
+ <td bgcolor=grey align=center><font face=sans-serif >
+ <p><b>Gordon James Ramsay</b> 
+ <p>was born in Johnstone, Scotland in November 8,1966. He left behind an early athletic career to become a renowned chef a </p>
+ <p>renowned chef in London. By the early 2000s, he was making his mark on British TV as the temperamental host as Ramsay's </p>
+ <p>Kitchen Nightmares and Hell's Kitchen, shows that made a successful transition to American audiences. The award winning </p>
+ <p>chef has since expanded his celebrity brand via such program as Masterchef and Hotel Hell and opening more restaurant   </p>
+ <p>around the globe.Scottish celebrity chef Gordon Ramsay has opened restaurants around the world and hosted such popular  </p>  
+ <p>TV programs as ‘Hell’s Kitchen’ and ‘MasterChef.’</p>
+</td>
+</tr>
+</table>
+<br><br>
+ <center>
+<table border=0 cellspacing="2" cellpadding="9">
+ <tr> 
+<td bgcolor=grey align=center><font face=sans-serif >
+<p><b>Jamie Trevor Oliver</b> 
+<p>Jamie Oliver is a chef born on May 27, 1975, in Clavering, United Kingdom. As a child he worked in his parents' restaurant, thus</p>
+<p> influencing his career path. He began attending Westminster Catering College at age 16 and then gained valuable  experience</p>
+<p>working at several reputable restaurants. Oliver's break into television came when he appeared in a documentary while working</p>
+ <p>at the River Café in London.</p><br>
+ 
+<p>From there, he gained fame after hosting a hit cooking show, The Naked Chef. Multiple cookbook publications and  restaurant</p>
+<p> openings followed, giving him a prominent platform for championing healthier eating for school children.Jamie Oliver is a</p>
+<p>children</p></td>
+</tr>
+</table>
+</center>
+
+<br><br><br><br>
+</body>
+    
+</html>

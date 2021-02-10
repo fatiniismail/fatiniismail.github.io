@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>SURVEY!</title>
+</head>
+<style>
+*
+{
+ padding:0;
+ margin:0;
+}
+body
+{
+ background-image:url(back.jpg);
+ background-size: cover;
+ background-position: center;
+ box sizing: border-box;
+ font family: sans-serif;
+ }
+ .topnav{
+  overflow:hidden;
+  background-color:2F4F4F;
+  }
+  
+  .topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+  .topnav a:hoverl{
+  background-color: #ddd;
+  color:#9E4244;
+  }
+  
+  .topnav a.active{
+  background-color: #F25278;;
+  color:white;
+  }
+  
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+ 
+ .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.active {
+  background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  </style>
+<center>
+<body>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="restaurant.jpg" width="2000" height="400">
+</div>
+
+<div class="mySlides fade">
+<img src="ramsay.jpg" width="2000" height="400">
+</div>
+
+<div class="mySlides fade">
+<img src="food.jpg" width="2000" height="400">
+</div>
+
+
+ <br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="topnav">
+ <a class="active"
+ href="index.html">HOME</a>
+ <a href="quiz.html">QUIZZES</a>
+ <a href="survey.html">SURVEY</a>
+ <a href="video.html">VIDEOS</a>
+ </div>
+ <br><br><br>
+<form>
+<table border="2" cellspacing="3" cellpadding="10" bgcolor="white">
+    
+	<tr>
+	    <td>Name : </td>
+		<td><input type="text" name="name" size="60"></td>
+	</tr>
+	<tr>
+	    <td>Date of Birth : </td>
+		<td><input type="date" id="birthday" name="birthday"></td>
+	</tr>
+    <tr>
+	    <td>Gender : </td>
+		<td>
+		    <input type="radio" id="male" name="gender">Male
+		    <input type="radio" id="female" name="gender">Female
+		</td>
+    </tr>
+	<tr>
+	    <td>Age : </td>
+		<td>
+		    <input type="number" id="age" name="age">
+		    
+		</td>
+    </tr>
+	
+	<tr>
+	 <td>Do you enjoy the quiz?</td>
+	  <td>
+	  <input type="radio" name="quiz" value="Yes">
+	  <label for="quiz">Yes
+	  <input type="radio" name="quiz" value="No">
+	  <label for="quiz">No
+	  </td>
+	  </tr>
+	  
+	  <tr>
+	  <td>What is your favourite food:</td>
+	  <td><textarea name="food" rows="3" cols="50"></textarea>
+	  </td>
+	  </tr>
+	  
+	  <tr>
+	  <td>How many hours are you spend watching cooking channels every day?</td>
+	  <td>
+	  <input type="checkbox" name="1-2hours">1-2 Hours
+	  <input type="checkbox" name="1-2hours">2-3 Hours
+	  <input type="checkbox" name="1-2hours">4-6 Hours
+	  <input type="checkbox" name="1-2hours">>6 Hours
+	  </td>
+	  </tr>
+	  
+	    
+		<tr>
+	    <td>
+	    <a href="FATINI_BINTI_ISMAIL.html"><center>	<input type="button" onclick="display_alert()" value="Submit"></center>
+	    </td>
+	    </td>
+        </tr>
+		
+		</table>
+		<br>
+		</form>
+		
+		<script>
+		 function display_alert()
+		 {
+		 alert("SUBMIT!THANK YOU FOR ANSWERING THIS SURVEY");
+		 }
+		 </script>
+		
+
+
+</body>
+</html>
